@@ -7,91 +7,439 @@
     <title>Register - ERTC &amp; PPP Calculator</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Multi-step-form.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#">ERTC &amp; PPP Calculator</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="index.html">ERTC &amp; PPP Calculator</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">&gt; Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">&gt;&nbsp;FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">&gt; About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#register">&gt;&nbsp;Begin Your Claim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">(512) 790-7880</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="page registration-page">
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Hello, Name!</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-2">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="datasets-index-accountant-view.html">Datasets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Users (visible only for Admin)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <section class="clean-block clean-form dark">
             <div class="container">
                 <div class="block-heading">
                     <h2 class="text-info">Create / Edit Dataset</h2>
-                    <p>Fill in the information about Dataset.</p>
                 </div>
-                <form>
-                    <div class="mb-3"><label class="form-label" for="name">Dataset Name</label><input class="form-control item" type="text" id="name"></div>
-                    <div class="mb-3"><label class="form-label" for="name">Business Name</label><input class="form-control item" type="text" id="name-3"></div>
-                    <div class="mb-3"><label class="form-label" for="name">Address</label><input class="form-control item" type="text" id="name-2"></div>
-                    <div class="mb-3"><label class="form-label" for="name">Begin ERTC Eligibility</label><input class="form-control item" type="text" id="name-7"></div>
-                    <div class="mb-3"><label class="form-label" for="name">End ERTC Eligibility</label><input class="form-control item" type="text" id="name-6"></div>
-                    <div class="mb-3"><label class="form-label" for="name">Date PPP Funds Were Received</label><input class="form-control item" type="text" id="name-5"></div>
-                    <div class="mb-3"><label class="form-label" for="name">End of PPP Covered Period</label><input class="form-control item" type="text" id="name-4"></div>
-                    <div class="mb-3"><label class="form-label" for="name">Payroll Dollar Used for PPP</label><input class="form-control item" type="text" id="name-1"></div>
-                    <div><button class="btn btn-primary" type="submit">Upload Payroll</button><button class="btn btn-primary pull-right" type="submit">Save</button></div>
-                </form>
+                <section>
+                    <div id="multple-step-form-n" class="container overflow-hidden" style="margin-top: 0px;margin-bottom: 10px;padding-bottom: 300px;padding-top: 57px;">
+                        <div id="progress-bar-button" class="multisteps-form">
+                            <div class="row">
+                                <div class="col-12 col-lg-8 ml-auto mr-auto mb-4">
+                                    <div class="multisteps-form__progress"><a class="btn multisteps-form__progress-btn js-active" role="button" title="User Info">Business Info</a><a class="btn multisteps-form__progress-btn" role="button" title="User Info">Owners</a><a class="btn multisteps-form__progress-btn" role="button" title="User Info">Relatives<br></a><a class="btn multisteps-form__progress-btn" role="button" title="User Info">Original Returns 2020<br></a><a class="btn multisteps-form__progress-btn" role="button" title="User Info">Original Returns 2021<br></a><a class="btn multisteps-form__progress-btn" role="button" title="User Info">Payroll</a><a class="btn multisteps-form__progress-btn" role="button" title="User Info">Save</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="multistep-start-row" class="row">
+                            <div id="multistep-start-column" class="col-12 col-lg-12 m-auto">
+                                <form id="main-form" class="multisteps-form__form" style="max-width: 100%;">
+                                    <div id="single-form-next" class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn" style="/*width: 100%;*/">
+                                        <h3 class="text-center multisteps-form__title">Business Info</h3>
+                                        <div id="form-content" class="multisteps-form__content">
+                                            <div class="mb-3"><label class="form-label" for="name">Business Name</label><input class="form-control item" type="text" id="name-3"></div>
+                                            <div class="mb-3"><label class="form-label" for="name">Address</label><input class="form-control item" type="text" id="name-2"></div>
+                                            <div class="mb-3"><label class="form-label" for="name">ZIP code</label><input class="form-control item" type="text" id="name-8"></div>
+                                            <div class="mb-3"><label class="form-label" for="name">City</label><input class="form-control item" type="text" id="name-9"></div>
+                                            <div class="mb-3"><label class="form-label" for="name">State</label><input class="form-control item" type="text" id="name-13"></div>
+                                            <div class="mb-3"><label class="form-label" for="name">Phone</label><input class="form-control item" type="text" id="name-10"></div>
+                                            <div class="mb-3"><label class="form-label" for="name">Contact Person Title</label><input class="form-control item" type="text" id="name-11"></div>
+                                            <div class="mb-3"><label class="form-label" for="name">Contact Person Email</label><input class="form-control item" type="text" id="name-12"></div>
+                                            <div id="next-button" class="button-row d-flex mt-4"><button class="btn btn btn-primary ml-auto js-btn-next" type="button" title="Next">Next</button></div>
+                                        </div>
+                                    </div>
+                                    <div id="single-form-next-prev" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                        <h2 class="text-info">Company Owners</h2>
+                                        <h5>List all W-2 employees who are a greater than 50% owner</h5>
+                                        <div id="form-content-1" class="multisteps-form__content">
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <div class="col-xl-2"><label class="col-form-label" for="email">Name</label></div>
+                                                    <div class="col-xl-8"><input class="form-control item" type="email" id="email"></div>
+                                                    <div class="col-xl-2 text-end align-self-end"><button class="btn btn-danger btn-sm" type="button">delete</button></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3"></div><button class="btn btn-primary">+&nbsp;Add Owner</button>
+                                            <div id="next-prev-buttons" class="button-row d-flex mt-4"><button class="btn btn btn-primary js-btn-prev" type="button" title="Prev">Prev</button><button class="btn btn btn-primary ml-auto js-btn-next mx-1" type="button" title="Next">Next</button></div>
+                                        </div>
+                                    </div>
+                                    <div id="single-form-next-prev-1" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                        <h2 class="text-info">Company Owners' Relatives</h2>
+                                        <h5>Relatives of employees who are written in the Owners section</h5>
+                                        <div id="form-content-2" class="multisteps-form__content">
+                                            <div class="mb-3">
+                                                <div class="row">
+                                                    <div class="col-xl-2"><label class="col-form-label" for="email">Name</label></div>
+                                                    <div class="col-xl-8"><input class="form-control item" type="email" id="email-5"></div>
+                                                    <div class="col-xl-2 text-end align-self-end"><button class="btn btn-danger btn-sm" type="button">delete</button></div>
+                                                </div>
+                                            </div><button class="btn btn-primary">+&nbsp;Add Relative</button>
+                                            <div id="next-prev-buttons-1" class="button-row d-flex mt-4"><button class="btn js-btn-prev btn btn-primary mx-1" type="button" title="Prev">Prev</button><button class="btn ml-auto js-btn-next btn btn-primary mx-1" type="button" title="Next">Next</button></div>
+                                        </div>
+                                    </div>
+                                    <div id="single-form-next-prev-2" class="multisteps-form__panel shadow p-4 rounded bg-white w-100" data-animation="scaleIn">
+                                        <h2 class="text-info">Original Returns 2020</h2>
+                                        <div id="form-content-3" class="multisteps-form__content">
+                                            <div class="mb-3"><label class="form-label" for="email">Begin ERTC Eligibility:</label><input class="form-control item" type="email" id="email-1"></div>
+                                            <div class="mb-3"><label class="form-label" for="email">End ERTC Eligibility:</label><input class="form-control item" type="email" id="email-7"></div>
+                                            <div class="mb-3"><label class="form-label" for="email">Date PPP Funds Were Received</label><input class="form-control item" type="email" id="email-6"></div>
+                                            <div class="mb-3"><label class="form-label" for="email">End of PPP Covered Period</label><input class="form-control item" type="email" id="email-8"></div>
+                                            <div class="mb-3"><label class="form-label" for="email">Payroll Dollars Used for PPP</label><input class="form-control item" type="email" id="email-9"></div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>From Originally Filled Form 941's</th>
+                                                            <th>Q2 2020</th>
+                                                            <th>Q3 2020</th>
+                                                            <th>Q4 2020</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Line 5a Taxable social Security Wages</td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 5b Taxable Social Security Tips</td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 11c Nonrefundable Portion of ERTC</td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 13d Nonrefundable Portion of ERTC<br></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 21 Qualified wages for the ERTC<br></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 22 Qualifying health expenses for the ERTC<br></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 24 Qualifying wages paid March 13-31 of 2020 for ERTC<br></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 25 Qualifying health expenses from March 13-31 of 2020 for ERTC<br></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div id="next-prev-buttons-2" class="button-row d-flex mt-4"><button class="btn js-btn-prev btn btn-primary mx-1" type="button" title="Prev">Prev</button><button class="btn ml-auto js-btn-next btn btn-primary mx-1" type="button" title="Next">Next</button></div>
+                                        </div>
+                                    </div>
+                                    <div id="single-form-next-prev-3" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                        <h2 class="text-info">Original Returns 2021</h2>
+                                        <div id="form-content-4" class="multisteps-form__content">
+                                            <div class="mb-3"><label class="form-label" for="email">Begin ERTC Eligibility:</label><input class="form-control item" type="email" id="email-10"></div>
+                                            <div class="mb-3"><label class="form-label" for="email">End ERTC Eligibility:</label><input class="form-control item" type="email" id="email-11"></div>
+                                            <div class="mb-3"><label class="form-label" for="email">Date PPP Funds Were Received</label><input class="form-control item" type="email" id="email-12"></div>
+                                            <div class="mb-3"><label class="form-label" for="email">End of PPP Covered Period</label><input class="form-control item" type="email" id="email-13"></div>
+                                            <div class="mb-3"><label class="form-label" for="email">Payroll Dollars Used for PPP</label><input class="form-control item" type="email" id="email-14"></div>
+                                            <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>From Originally Filled Form 941's</th>
+                                                            <th>Q1 2021</th>
+                                                            <th>Q2 2021</th>
+                                                            <th>Q3 2021</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Line 5a Taxable social Security Wages</td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 5b Taxable Social Security Tips</td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 5c Taxable Medicare Wages &amp; Tips</td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 11c Nonrefundable Portion of ERTC<br></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 13d Refundable portion of ERTC<br></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 21 Qualified wages for the ERTC<br></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Line 22 Qualifying health expenses for the ERTC<br></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div id="next-prev-buttons-3" class="button-row d-flex mt-4"><button class="btn js-btn-prev btn btn-primary mx-1" type="button" title="Prev">Prev</button><button class="btn ml-auto js-btn-next btn btn-primary mx-1" type="button" title="Next">Next</button></div>
+                                        </div>
+                                    </div>
+                                    <div id="single-form-next-prev-4" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                        <h2 class="text-info">Payroll</h2><button class="btn btn-primary mx-1" type="button">Upload New Payroll</button><button class="btn btn-primary mx-1" type="button">Clear Payroll</button><button class="btn btn-primary mx-1" type="submit">+ Add a New Transaction</button>
+                                        <div id="form-content-5" class="multisteps-form__content">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Earned Date</th>
+                                                            <th>Check Date</th>
+                                                            <th>Cash Wages</th>
+                                                            <th>EE Medical</th>
+                                                            <th>ER Medical</th>
+                                                            <th><strong>ER Dental / Vision / Life</strong><br></th>
+                                                            <th><strong>SUI / SDI Employer Tax</strong><br></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                            <td><input class="form-control form-control-sm" type="text"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div id="next-prev-buttons-4" class="button-row d-flex mt-4"><button class="btn js-btn-prev btn btn-primary mx-1" type="button" title="Prev">Prev</button><button class="btn ml-auto js-btn-next btn btn-primary mx-1" type="button" title="Next">Next</button></div>
+                                        </div>
+                                    </div>
+                                    <div id="single-form-next-prev-5" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                        <h2 class="text-info">Payroll</h2>
+                                        <div id="form-content-6" class="multisteps-form__content">
+                                            <div id="next-prev-buttons-5" class="button-row d-flex mt-4"><button class="btn js-btn-prev btn btn-primary mx-1" type="button" title="Prev">Prev</button><button class="btn btn-primary" type="submit">Save!</button></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
     </main>
     <footer class="page-footer dark">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
-                    <h5>Get started</h5>
+                <div class="col-sm-3 col-xl-3 text-start">
+                    <h5 class="text-white">Pages</h5>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="ertc-calculator.html">ERTC Calculator</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <h5>About us</h5>
+                <div class="col-sm-3 col-xl-3 text-start">
+                    <h5 class="text-white">Company Members</h5>
                     <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <h5>Support</h5>
+                <div class="col-sm-3 col-xl-3 text-start">
+                    <h5 class="text-white">Datasets</h5>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Legal</h5>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="datasets-index-accountant-view.html">Index</a></li>
+                        <li><a href="datasets-new-edit-page.html">New / Edit</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2021 Copyright Text</p>
+            <div class="row">
+                <div class="col-sm-3 col-xl-12 text-center"><img src="assets/img/Dark-Logo-Horizontal.png"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-xl-12 text-center">
+                    <p class="text-white">Copyright&nbsp;2021&nbsp;| JWC Employee Retention Tax Credit Advisory CPA, LLC | Austin, TX | (512) 790-7880 |&nbsp;<a href="http://ertcadvisors.com/privacy/">Privacy Policy</a><br></p>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/Multi-step-form.js"></script>
 </body>
 
 </html>

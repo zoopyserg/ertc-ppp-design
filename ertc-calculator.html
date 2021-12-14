@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Login - ERTC &amp; PPP Calculator</title>
+    <title>Register - ERTC &amp; PPP Calculator</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -28,19 +28,27 @@
             </div>
         </div>
     </nav>
-    <main class="page login-page">
+    <main class="page registration-page">
         <section class="clean-block clean-form dark">
+            <div class="block-heading"></div>
             <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Log In</h2>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h2 class="text-info">Employee Retention Tax Credit&nbsp;Calculator<br></h2>
+                        <p class="text-start">The purpose of this calculator is to provide a preliminary determination of your eligibility for the ERTC credits, and then estimate the refund that you should expect upon a more thorough and detailed computation.<br></p>
+                        <p class="text-start">The precision of our estimate is limited by the precision of your inputs. You are welcome to guess-timate, but more data in = better data out.<br></p>
+                        <p class="text-start">Upon submission of your inputs, you will receive an email explaining the methodology of our calculation and how you can take immediate steps to claim your refund check.<br></p>
+                        <form>
+                            <div class="mb-3"><input class="form-control item" type="text" id="name" placeholder="Full Name"></div>
+                            <div class="mb-3"><input class="form-control item" type="email" id="email" placeholder="BestEmail@Address.com"></div>
+                            <div class="mb-3"><input class="form-control item" type="email" id="phone" placeholder="Phone Number"></div>
+                            <div class="mb-3"><input class="form-control item" type="email" id="title" placeholder="Title"></div>
+                            <div class="mb-3"><input class="form-control item" type="email" id="businessname" placeholder="Business Name"></div><button class="btn btn-success" type="submit">Let's Estimate Your Tax Credits</button>
+                        </form>
+                    </div>
+                    <div class="col-xl-6"><img class="w-50" src="assets/img/photo-1585562125287-d748f3097a8f.jpg"></div>
                 </div>
-                <form>
-                    <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control item" type="email" id="email"></div>
-                    <div class="mb-3"><label class="form-label" for="password">Password</label><input class="form-control" type="password" id="password"></div>
-                    <div class="mb-3">
-                        <div class="form-check"><input class="form-check-input" type="checkbox" id="checkbox"><label class="form-check-label" for="checkbox">Remember me</label></div>
-                    </div><button class="btn btn-primary" type="submit">Log In</button>
-                </form>
+                <div class="block-heading"></div>
             </div>
         </section>
     </main>
